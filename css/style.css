@@ -1,0 +1,52 @@
+.wrapper {
+    background-color: #2B2734;
+    /* max-height: 100vh; */
+}
+/* .video {
+    min-height: 400px;
+} */
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-family: 'Baloo Bhai', cursive;
+    margin-top: 20px;
+}
+
+.phrase {
+    color: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.iconsBlock {
+    padding: 0px;
+}
+
+.icon {
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    margin-top: 50px;
+}
+
+
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+.row {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+}
+
+.col-12 {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
