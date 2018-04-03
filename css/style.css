@@ -1,52 +1,89 @@
-.wrapper {
-    background-color: #2B2734;
-    /* max-height: 100vh; */
-}
-/* .video {
-    min-height: 400px;
-} */
-
-h1 {
-    color: white;
-    font-size: 4rem;
-    letter-spacing: 5px;
-    font-family: 'Baloo Bhai', cursive;
-    margin-top: 20px;
+body {
+    margin: 0 auto;
 }
 
-.phrase {
-    color: white;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-
-.iconsBlock {
-    padding: 0px;
-}
-
-.icon {
-    border: 5px solid white;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
+.fullscreen-video-background {
+    background: #000;
+    position: relative;
+    width: 100%;
+    z-index: -99;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .fullscreen-video-background ._pattern-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.3;
+    bottom: 0;
+    background-image: url(https://cdnjs.cloudflare.com/ajax/libs/vegas/2.3.1/overlays/03.png);
+    z-index: 2;
+  }
+  .fullscreen-video-background #_buffering-background {
+    /* position: absolute; */
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: #222;
+    z-index: 1;
+  }
+  .fullscreen-video-background #_youtube-iframe-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    margin-top: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+  }
+  .fullscreen-video-background #_youtube-iframe-wrapper #_youtube-iframe {
+    position: absolute;
+    pointer-events: none;
+    margin: 0 auto;
+    height: 300vh;
+    width: 120vw;
+  }
+
+  .no-padding_margin {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
-
-
-img {
-    width: 75px;
-    height: 75px;
+.btn {
+    position: absolute;
+    top: 80%;
+    /* width: 50%; */
+    /* opacity: 0.3; */
+    /* left: 45%; */
 }
 
-.row {
-    margin-left: 0px!important;
-    margin-right: 0px!important;
+.TESTAS {
+    min-height: 100px;
+    background-color: #211E20;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    min-height: 100vh;
 }
 
-.col-12 {
-    padding-left: 0px!important;
-    padding-right: 0px!important;
+#TESTAS1 {
+    min-height: 100px;
+    background-color: grey;
+}
+
+#gallery {
+    color: white;
+    padding-bottom: 2%;
+    font-size: 4rem;
+}
+
+.carousel-inner {
+    max-height: 50vh;
+    
 }
