@@ -52,7 +52,7 @@ $(function(){
     
     $("button").click(function() {
         $('html,body').animate({
-            scrollTop: $(".TESTAS").offset().top},
+            scrollTop: $(".TESTAS1").offset().top},
             'slow');
     });
 
