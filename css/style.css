@@ -81,7 +81,7 @@ body {
 #gallery {
     color: white;
     padding-bottom: 2%;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .carousel-inner {
@@ -108,5 +108,18 @@ td {
 }
 
 span {
-    font-size: 3rem;
+    font-size: 2rem;
+    
+}
+
+.runner {
+    background-color: #000;
+}
+
+.catcher {
+    background-color: #211E20;
+}
+
+label {
+    color: white;
 }
