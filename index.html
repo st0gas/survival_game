@@ -13,6 +13,8 @@
     <title>Hello, world!</title>
     <!-- <script src="js/jquery.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="js/Players.js"></script>
 
 
 </head>
@@ -23,12 +25,12 @@
         <div class="_pattern-overlay"></div>
         <div id="_buffering-background"></div>
         <div id="_youtube-iframe-wrapper">
-            <div id="_youtube-iframe" data-youtubeurl="n72PBi0COtk">TEST</div>
+            <div id="_youtube-iframe" data-youtubeurl="5RzH6maPulw">TEST</div>
         </div>
     </div>
 
     <div class="d-flex justify-content-center infoButton">
-        <button type="button" class="btn btn-outline-light btn-lg">IŠBANDYK SAVE</button>
+        <button type="button" class="btn btn-outline-light btn-lg button_prim">IŠBANDYK SAVE</button>
     </div>
 
 
@@ -103,18 +105,30 @@
     <!-- REITINGAI -->
 
 
+  
+
     <div class="row no-padding_margin TESTAS1">
-        <div class="col-10 offset-lg-1">
-            <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+            
                 <div class="col-12 text-center my-5">
                     <span>REITINGAI</span>
                 </div>
 
+            <!-- </div> -->
+               
+    
+            <div class="row p-0 m-0">
+                <div class="col-sm-5 p-0 m-0">
+                    <button type="button" class="btn btn-default btn-block runnerBtn">Bėgikai</button>
+                </div>
+                <div class="col-sm-5 offset-sm-2 p-0">
+                    <button type="button" class="btn btn-default btn-block cathcerBtn">Persekėtojai</button>
+                </div>
             </div>
             <div class="row  mt-5 m-0">
                 <div class="col-lg-5  border px-0 my-4 runner">
                     <div class="row">
-                        <div class="col-3 ">
+                        <div class="col-3  ">
                             <img src="img/face.jpg" alt="face" id="faceOfKing">
                         </div>
                         <div class="col-8 d-flex justify-content-center">
@@ -191,7 +205,9 @@
 
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="TESTASMESTAS">
+                            </tbody>
+                            <!-- <tbody id="TESTASMESTAS">
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>Mark</td>
@@ -262,7 +278,7 @@
                                     <td>85 min</td>
                                     <td>754</td>
                                 </tr>
-                            </tbody>
+                            </tbody> -->
                         </table>
                     </div>
                 </div>
@@ -286,12 +302,12 @@
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <label for="inputEmail4">Vardas</label>
+                        <input type="text" class="form-control" id="name" placeholder="Vardas">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <label for="inputPassword4">Pavarde</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Pavarde">
                     </div>
                 </div>
                 <div class="form-group">
@@ -329,6 +345,17 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Sign in</button>
             </form>
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
 

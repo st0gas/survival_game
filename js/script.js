@@ -1,3 +1,5 @@
+
+
 // 2. This code loads the Youtube IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
@@ -46,16 +48,46 @@ function onYoutubePlayerStateChange(event) {
     }
 }
 
+function listRunners (){
+    let h = "";
+    let x = 1;
+    for (i=0;i<PEOPLE.length;i++){
+        
+       if(PEOPLE[i].runner == "y"){
+        h = h + `
+        <tr>
+        <th scope="row">${[x]}</th>
+        <td>${PEOPLE[i].name}</td>
+        <td>${PEOPLE[i].pavarde}</td>
+        <td>${PEOPLE[i].color}</td>
+        <td>${PEOPLE[i].gamesNr}</td>
+        <td>${PEOPLE[i].lastGamepoints}</td>
+        <td>${PEOPLE[i].date}</td>
+        <td>${PEOPLE[i].mileage}</td>
+        `;
+        x ++;
+        // console.log(h);
+       };
+    };
+    console.log(h);
+    $("#TESTASMESTAS").html(h)
+};
+
+
 $(function(){
-    $("button").hide();
-    $("button").delay(3000).fadeIn(20000);
+    $(".button_prim").hide();
+    $(".button_prim").delay(3000).fadeIn(20000);
     
-    $("button").click(function() {
+    $(".button_prim").click(function() {
         $('html,body').animate({
             scrollTop: $(".TESTAS1").offset().top},
             'slow');
     });
 
+
+ 
+   
+    
     
 
     //         location.href = "#TESTAS1"; 

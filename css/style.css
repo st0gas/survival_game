@@ -123,3 +123,23 @@ span {
 label {
     color: white;
 }
+
+.btn-default {
+    background-color: #49475B;
+    color: #E9EB9E;
+    border-color: #adadad;
+    /* border-radius: 25px; */
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active    {
+    background-color: #ebebeb;
+    color: #333;
+    border-color: #adadad;
+}
+
+
+
+/* FORMA */
+
